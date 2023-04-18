@@ -3,6 +3,8 @@ package me.suongnguyen.departmentservice.service.impl;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import me.suongnguyen.commonmodel.exception.NotFoundResourceException;
+import me.suongnguyen.departmentservice.constant.DepartmentError;
 import me.suongnguyen.departmentservice.dto.DepartmentDto;
 import me.suongnguyen.departmentservice.entity.Department;
 import me.suongnguyen.departmentservice.mapper.IDepartmentMapper;
@@ -31,7 +33,7 @@ public class DepartmentServiceImpl implements IDepartmentService {
     public DepartmentDto findByCode(String code) {
         log.info("get department by code: {}", code);
         Department department = this.departmentRepository.findByCode(code)
-                .orElseThrow(() -> new IllegalArgumentException("not found department by code: " + code));
+                .orElseThrow(() -> new NotFoundResourceException(DepartmentError.NOT_FOUND_DEPARTMENT, code));
         log.info("found department by code: {}", department);
         return IDepartmentMapper.INSTANCE.toDto(department);
     }

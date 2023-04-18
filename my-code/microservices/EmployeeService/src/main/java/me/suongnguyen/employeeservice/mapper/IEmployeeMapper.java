@@ -7,6 +7,10 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
-public interface IEmployeeMapper extends IMapper<Employee, EmployeeDto> {
+public interface IEmployeeMapper {
     IEmployeeMapper INSTANCE = Mappers.getMapper(IEmployeeMapper.class);
+
+    Employee toEntity(EmployeeDto dto);
+
+    EmployeeDto toDto(Employee entity);
 }
