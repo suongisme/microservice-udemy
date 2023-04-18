@@ -30,6 +30,7 @@
         <module>DepartmentService</module>
         <module>EmployeeService</module>
         <module>ServiceRegistry</module>
+        <module>ApiGateway</module>
     </modules>
 
     <dependencies>
