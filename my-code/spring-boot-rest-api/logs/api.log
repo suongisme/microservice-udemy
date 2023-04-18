@@ -1,0 +1,238 @@
+2023-04-10 22:24:59.596  INFO 1920 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 1920 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 22:24:59.613  INFO 1920 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 22:25:02.247  INFO 1920 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 22:25:02.426  INFO 1920 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 155 ms. Found 1 JPA repository interfaces.
+2023-04-10 22:25:03.850  INFO 1920 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 22:25:03.878  INFO 1920 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 22:25:03.879  INFO 1920 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 22:25:04.129  INFO 1920 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 22:25:04.130  INFO 1920 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 4360 ms
+2023-04-10 22:25:04.734  INFO 1920 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 22:25:04.898  INFO 1920 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 22:25:05.731  INFO 1920 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 22:25:06.862  INFO 1920 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fb44964
+2023-04-10 22:25:06.868  INFO 1920 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 22:25:07.070  INFO 1920 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 22:25:09.464  INFO 1920 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 22:25:09.491  INFO 1920 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:25:11.870  INFO 1920 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-10 22:25:12.116  INFO 1920 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 22:25:12.146  INFO 1920 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 14.347 seconds (process running for 18.507)
+2023-04-10 22:25:12.791  INFO 1920 --- [2)-192.168.1.10] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 22:25:12.793  INFO 1920 --- [2)-192.168.1.10] o.s.web.servlet.DispatcherServlet        [] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 22:25:12.799  INFO 1920 --- [2)-192.168.1.10] o.s.web.servlet.DispatcherServlet        [] : Completed initialization in 3 ms
+2023-04-10 22:25:36.480  WARN 1920 --- [nio-8080-exec-4] o.s.web.servlet.PageNotFound             [] : No mapping for GET /favicon.ico
+2023-04-10 22:25:50.240  INFO 1920 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:25:50.246  INFO 1920 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 22:25:50.325  INFO 1920 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.
+2023-04-10 22:27:54.563  INFO 12148 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 12148 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 22:27:54.573  INFO 12148 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 22:27:57.731  INFO 12148 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 22:27:57.961  INFO 12148 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 198 ms. Found 1 JPA repository interfaces.
+2023-04-10 22:27:59.602  INFO 12148 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 22:27:59.627  INFO 12148 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 22:27:59.628  INFO 12148 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 22:27:59.891  INFO 12148 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 22:27:59.892  INFO 12148 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 5187 ms
+2023-04-10 22:28:00.511  INFO 12148 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 22:28:00.698  INFO 12148 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 22:28:01.681  INFO 12148 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 22:28:02.788  INFO 12148 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ddd84d2
+2023-04-10 22:28:02.795  INFO 12148 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 22:28:03.038  INFO 12148 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 22:28:05.356  INFO 12148 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 22:28:05.383  INFO 12148 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:28:07.276  INFO 12148 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-10 22:28:07.469  INFO 12148 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 22:28:07.500  INFO 12148 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 14.386 seconds (process running for 16.587)
+2023-04-10 22:28:12.770  INFO 12148 --- [2)-192.168.1.10] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 22:28:12.771  INFO 12148 --- [2)-192.168.1.10] o.s.web.servlet.DispatcherServlet        [] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 22:28:12.775  INFO 12148 --- [2)-192.168.1.10] o.s.web.servlet.DispatcherServlet        [] : Completed initialization in 3 ms
+2023-04-10 22:35:34.150  INFO 12148 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:35:34.157  INFO 12148 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 22:35:34.202  INFO 12148 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.
+2023-04-10 22:35:40.241  INFO 11588 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 11588 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 22:35:40.251  INFO 11588 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 22:35:44.155  INFO 11588 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 22:35:44.533  INFO 11588 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 266 ms. Found 1 JPA repository interfaces.
+2023-04-10 22:35:46.621  INFO 11588 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 22:35:46.651  INFO 11588 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 22:35:46.652  INFO 11588 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 22:35:46.932  INFO 11588 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 22:35:46.933  INFO 11588 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 6508 ms
+2023-04-10 22:35:47.454  INFO 11588 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 22:35:47.623  INFO 11588 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 22:35:48.431  INFO 11588 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 22:35:49.354  INFO 11588 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d065e1a
+2023-04-10 22:35:49.360  INFO 11588 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 22:35:49.520  INFO 11588 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 22:35:51.639  INFO 11588 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 22:35:51.671  INFO 11588 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:35:53.738  INFO 11588 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-10 22:35:53.958  INFO 11588 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 22:35:53.986  INFO 11588 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 15.434 seconds (process running for 17.763)
+2023-04-10 22:36:05.698  INFO 11588 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:36:05.702  INFO 11588 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 22:36:05.741  INFO 11588 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.
+2023-04-10 22:36:12.384  INFO 11708 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 11708 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 22:36:12.392  INFO 11708 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 22:36:15.065  INFO 11708 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 22:36:15.260  INFO 11708 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 158 ms. Found 1 JPA repository interfaces.
+2023-04-10 22:36:16.786  INFO 11708 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 22:36:16.813  INFO 11708 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 22:36:16.814  INFO 11708 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 22:36:17.062  INFO 11708 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 22:36:17.063  INFO 11708 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 4549 ms
+2023-04-10 22:36:17.569  INFO 11708 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 22:36:17.731  INFO 11708 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 22:36:18.643  INFO 11708 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 22:36:19.593  INFO 11708 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@428eb3d5
+2023-04-10 22:36:19.603  INFO 11708 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 22:36:19.878  INFO 11708 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 22:36:22.782  INFO 11708 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 22:36:22.836  INFO 11708 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:36:25.231  INFO 11708 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-10 22:36:25.518  INFO 11708 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 22:36:25.557  INFO 11708 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 14.627 seconds (process running for 16.836)
+2023-04-10 22:36:42.211  INFO 11708 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:36:42.216  INFO 11708 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 22:36:42.252  INFO 11708 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.
+2023-04-10 22:36:48.192  INFO 16760 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 16760 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 22:36:48.199  INFO 16760 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 22:36:50.685  INFO 16760 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 22:36:50.881  INFO 16760 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interfaces.
+2023-04-10 22:36:52.423  INFO 16760 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 22:36:52.452  INFO 16760 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 22:36:52.453  INFO 16760 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 22:36:52.662  INFO 16760 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 22:36:52.663  INFO 16760 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 4340 ms
+2023-04-10 22:36:53.251  INFO 16760 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 22:36:53.376  INFO 16760 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 22:36:54.172  INFO 16760 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 22:36:54.955  INFO 16760 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57b63253
+2023-04-10 22:36:54.961  INFO 16760 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 22:36:55.119  INFO 16760 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 22:36:57.206  INFO 16760 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 22:36:57.240  INFO 16760 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:36:58.962  INFO 16760 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-10 22:36:59.153  INFO 16760 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 22:36:59.177  INFO 16760 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 12.383 seconds (process running for 14.324)
+2023-04-10 22:37:05.623  INFO 16760 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 22:37:05.623  INFO 16760 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        [] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 22:37:05.626  INFO 16760 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        [] : Completed initialization in 2 ms
+2023-04-10 22:37:23.012  INFO 16760 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:37:23.017  INFO 16760 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 22:37:23.056  INFO 16760 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.
+2023-04-10 22:37:28.465  INFO 5556 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 5556 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 22:37:28.474  INFO 5556 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 22:37:30.817  INFO 5556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 22:37:30.968  INFO 5556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interfaces.
+2023-04-10 22:37:32.177  INFO 5556 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 22:37:32.196  INFO 5556 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 22:37:32.197  INFO 5556 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 22:37:32.436  INFO 5556 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 22:37:32.437  INFO 5556 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 3839 ms
+2023-04-10 22:37:32.997  INFO 5556 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 22:37:33.135  INFO 5556 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 22:37:33.820  INFO 5556 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 22:37:34.625  INFO 5556 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42503099
+2023-04-10 22:37:34.630  INFO 5556 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 22:37:34.774  INFO 5556 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 22:37:36.954  INFO 5556 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 22:37:36.978  INFO 5556 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:37:38.686  INFO 5556 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-10 22:37:38.878  INFO 5556 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 22:37:38.908  INFO 5556 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 11.885 seconds (process running for 13.88)
+2023-04-10 22:37:39.255  INFO 5556 --- [5)-192.168.1.10] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 22:37:39.256  INFO 5556 --- [5)-192.168.1.10] o.s.web.servlet.DispatcherServlet        [] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 22:37:39.260  INFO 5556 --- [5)-192.168.1.10] o.s.web.servlet.DispatcherServlet        [] : Completed initialization in 4 ms
+2023-04-10 22:43:03.907  INFO 5556 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:43:03.914  INFO 5556 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 22:43:03.955  INFO 5556 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.
+2023-04-10 22:43:10.266  INFO 14752 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 14752 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 22:43:10.274  INFO 14752 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 22:43:12.681  INFO 14752 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 22:43:12.820  INFO 14752 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interfaces.
+2023-04-10 22:43:13.988  INFO 14752 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 22:43:14.007  INFO 14752 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 22:43:14.008  INFO 14752 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 22:43:14.201  INFO 14752 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 22:43:14.201  INFO 14752 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 3799 ms
+2023-04-10 22:43:14.688  INFO 14752 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 22:43:14.819  INFO 14752 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 22:43:15.538  INFO 14752 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 22:43:16.317  INFO 14752 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c8d45cf
+2023-04-10 22:43:16.323  INFO 14752 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 22:43:16.587  INFO 14752 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 22:43:19.104  INFO 14752 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 22:43:19.127  INFO 14752 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:43:20.786  INFO 14752 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-10 22:43:20.994  INFO 14752 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 22:43:21.023  INFO 14752 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 12.214 seconds (process running for 14.381)
+2023-04-10 22:43:35.720  INFO 14752 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 22:43:35.720  INFO 14752 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        [] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 22:43:35.722  INFO 14752 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        [] : Completed initialization in 2 ms
+2023-04-10 22:53:25.682  WARN 14752 --- [nio-8080-exec-3] o.s.web.servlet.PageNotFound             [] : No mapping for GET /metrics/jvm.threads.live%22
+2023-04-10 22:53:27.724  WARN 14752 --- [nio-8080-exec-7] o.s.web.servlet.PageNotFound             [] : No mapping for GET /metrics/jvm.threads.live
+2023-04-10 22:56:42.494  WARN 14752 --- [nio-8080-exec-8] o.s.web.servlet.PageNotFound             [] : No mapping for GET /actuator/shutdown
+2023-04-10 22:57:04.827  INFO 14752 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:57:04.833  INFO 14752 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 22:57:04.885  INFO 14752 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.
+2023-04-10 22:57:14.371  INFO 1724 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 1724 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 22:57:14.397  INFO 1724 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 22:57:17.754  INFO 1724 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 22:57:17.970  INFO 1724 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 188 ms. Found 1 JPA repository interfaces.
+2023-04-10 22:57:20.018  INFO 1724 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 22:57:20.044  INFO 1724 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 22:57:20.045  INFO 1724 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 22:57:20.502  INFO 1724 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 22:57:20.505  INFO 1724 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 5898 ms
+2023-04-10 22:57:21.452  INFO 1724 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 22:57:21.754  INFO 1724 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 22:57:23.357  INFO 1724 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 22:57:24.942  INFO 1724 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2abedbbd
+2023-04-10 22:57:24.950  INFO 1724 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 22:57:25.158  INFO 1724 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 22:57:28.847  INFO 1724 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 22:57:28.879  INFO 1724 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 22:57:30.905  INFO 1724 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-04-10 22:57:31.119  INFO 1724 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 22:57:31.145  INFO 1724 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 19.075 seconds (process running for 21.491)
+2023-04-10 23:01:37.608  INFO 1724 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 23:01:37.609  INFO 1724 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        [] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 23:01:37.612  INFO 1724 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        [] : Completed initialization in 3 ms
+2023-04-10 23:12:15.136  INFO 1724 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 23:12:15.145  INFO 1724 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 23:12:16.548  INFO 1724 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.
+2023-04-10 23:15:53.603  INFO 2256 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Starting SpringBootRestApiApplication using Java 17.0.4.1 with PID 2256 (D:\edu\udemy\microservice\my-code\spring-boot-rest-api\target\classes started by suong in D:\edu\udemy\microservice\my-code\spring-boot-rest-api)
+2023-04-10 23:15:53.611  INFO 2256 --- [           main] n.j.s.SpringBootRestApiApplication       [] : The following 1 profile is active: "dev"
+2023-04-10 23:15:56.490  INFO 2256 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 23:15:56.701  INFO 2256 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate [] : Finished Spring Data repository scanning in 183 ms. Found 1 JPA repository interfaces.
+2023-04-10 23:15:57.964  INFO 2256 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat initialized with port(s): 8080 (http)
+2023-04-10 23:15:57.993  INFO 2256 --- [           main] o.apache.catalina.core.StandardService   [] : Starting service [Tomcat]
+2023-04-10 23:15:57.994  INFO 2256 --- [           main] o.apache.catalina.core.StandardEngine    [] : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-10 23:15:58.246  INFO 2256 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring embedded WebApplicationContext
+2023-04-10 23:15:58.247  INFO 2256 --- [           main] w.s.c.ServletWebServerApplicationContext [] : Root WebApplicationContext: initialization completed in 4500 ms
+2023-04-10 23:15:58.873  INFO 2256 --- [           main] o.hibernate.jpa.internal.util.LogHelper  [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-10 23:15:59.072  INFO 2256 --- [           main] org.hibernate.Version                    [] : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-10 23:15:59.885  INFO 2256 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Starting...
+2023-04-10 23:16:00.834  INFO 2256 --- [           main] com.zaxxer.hikari.pool.HikariPool        [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6da646b8
+2023-04-10 23:16:00.840  INFO 2256 --- [           main] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Start completed.
+2023-04-10 23:16:01.018  INFO 2256 --- [           main] SQL dialect                              [] : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-10 23:16:03.264  INFO 2256 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-10 23:16:03.292  INFO 2256 --- [           main] j.LocalContainerEntityManagerFactoryBean [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 23:16:05.406  INFO 2256 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      [] : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-04-10 23:16:05.613  INFO 2256 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [] : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 23:16:05.645  INFO 2256 --- [           main] n.j.s.SpringBootRestApiApplication       [] : Started SpringBootRestApiApplication in 13.53 seconds (process running for 17.492)
+2023-04-10 23:16:06.395  INFO 2256 --- [3)-192.168.1.10] o.a.c.c.C.[Tomcat].[localhost].[/]       [] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 23:16:06.395  INFO 2256 --- [3)-192.168.1.10] o.s.web.servlet.DispatcherServlet        [] : Initializing Servlet 'dispatcherServlet'
+2023-04-10 23:16:06.401  INFO 2256 --- [3)-192.168.1.10] o.s.web.servlet.DispatcherServlet        [] : Completed initialization in 6 ms
+2023-04-10 23:18:27.159  INFO 2256 --- [nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  [cee2348a-b79a-4e53-850a-d55207c02f3e] : Init duration for springdoc-openapi is: 696 ms
+2023-04-10 23:18:52.457  INFO 2256 --- [io-8080-exec-10] n.j.s.service.impl.UserServiceImpl       [7fc44241-f4ac-46d1-810a-cfdbf575748b] : find user by id: 1
+2023-04-10 23:19:06.608  INFO 2256 --- [nio-8080-exec-1] n.j.s.service.impl.UserServiceImpl       [2c989dc6-34b7-4880-8a48-84b71d320709] : find user by id: 2
+2023-04-10 23:19:32.025  INFO 2256 --- [nio-8080-exec-2] n.j.s.service.impl.UserServiceImpl       [4d83f8b4-5b4b-442c-8b8b-64a887967f6e] : update user: 2
+2023-04-10 23:19:32.026  INFO 2256 --- [nio-8080-exec-2] n.j.s.service.impl.UserServiceImpl       [4d83f8b4-5b4b-442c-8b8b-64a887967f6e] : find user by id: 2
+2023-04-10 23:19:32.069  INFO 2256 --- [nio-8080-exec-2] n.j.s.service.impl.UserServiceImpl       [4d83f8b4-5b4b-442c-8b8b-64a887967f6e] : update user successfully
+2023-04-10 23:24:28.487  INFO 2256 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 23:24:28.493  INFO 2256 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown initiated...
+2023-04-10 23:24:28.625  INFO 2256 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       [] : HikariPool-1 - Shutdown completed.

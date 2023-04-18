@@ -1,0 +1,36 @@
+app:
+  time-zone: Asia/Ho_Chi_Minh
+spring:
+  datasource:
+    username: root
+    password: ${DB_PASSWORD}
+    url: jdbc:mysql://${DB_HOST}/user_management
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+    open-in-view: false
+
+logging:
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr([%X{RequestId}]){magenta} %clr(:){faint} %m%n%wEx"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${PID:- } --- [%15.15t] %-40.40logger{39} [%X{RequestId}] : %m%n%wEx"
+  file:
+    name: ./logs/app.log
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: when_authorized
+  endpoints:
+    web:
+      exposure:
+        include: '*'

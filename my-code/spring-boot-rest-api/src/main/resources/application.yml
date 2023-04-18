@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+info:
+  app:
+    name: spring-boot-rest-api
+    description: Project Spring Boot Rest Api - Microservices Course - Udemy
+    version: 0.0.1
+  author:
+    name: SuongNguyen
+    contact: suongnguyenytm2001@gmail.com
+    repository: https://github.com/suongisme
+    country: VietNam
