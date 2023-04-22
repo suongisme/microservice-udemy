@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: '{cipher}386156872852313e79dc7cf7f2bedd8df16992a8a4fa282adcdcc873acc334952e9931b1ca0d57cc8bacedb326ab28b3eda36d015e464ee4186e9f52a7aee0dc'
+    username: '{cipher}f45b0042937640d382b65fa7d2bbcb3b3edb29638a3bc0ac0e866a23bd7866cd'
+    password: '{cipher}6b1e83587a0d165f9a3445ac5647b9dc84be48638bf137b69b816fe92a3ed8fa'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  instance:
+    client:
+      serverUrl:
+        defaultZone: '{cipher}f1b35225929c633c7ac1a515e0cc789fbb2bef897f769df6aeb41f2870816dd39d7f962387741542b22f2ca2183a31f6'
