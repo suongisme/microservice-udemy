@@ -24,9 +24,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{ms-department-address}}",
+							"raw": "{{ms-api-gateway}}{{ms-department-address}}",
 							"host": [
-								"{{ms-department-address}}"
+								"{{ms-api-gateway}}{{ms-department-address}}"
 							]
 						}
 					},
@@ -38,9 +38,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{ms-department-address}}?code=IT001",
+							"raw": "{{ms-api-gateway}}{{ms-department-address}}?code=IT001",
 							"host": [
-								"{{ms-department-address}}"
+								"{{ms-api-gateway}}{{ms-department-address}}"
 							],
 							"query": [
 								{
@@ -70,9 +70,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{ms-employee-address}}/1",
+							"raw": "{{ms-api-gateway}}{{ms-employee-address}}/1",
 							"host": [
-								"{{ms-employee-address}}"
+								"{{ms-api-gateway}}{{ms-employee-address}}"
 							],
 							"path": [
 								"1"
@@ -96,9 +96,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{ms-employee-address}}",
+							"raw": "{{ms-api-gateway}}{{ms-employee-address}}",
 							"host": [
-								"{{ms-employee-address}}"
+								"{{ms-api-gateway}}{{ms-employee-address}}"
 							]
 						}
 					},
