@@ -25,12 +25,14 @@
     </properties>
 
     <modules>
+        <module>ServiceRegistry</module>
+        <module>ApiGateway</module>
+        <module>ConfigServer</module>
+
         <module>Dependencies</module>
         <module>CommonModel</module>
         <module>DepartmentService</module>
         <module>EmployeeService</module>
-        <module>ServiceRegistry</module>
-        <module>ApiGateway</module>
     </modules>
 
     <dependencies>
