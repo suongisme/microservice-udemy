@@ -1,0 +1,27 @@
+{
+	"id": "a64d244c-4d5c-4780-bab1-bf57a08c435f",
+	"name": "microservice",
+	"values": [
+		{
+			"key": "ms-department-address",
+			"value": "http://localhost:8080/api/departments",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "ms-employee-address",
+			"value": "http://localhost:8081/api/employees",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "ms-api-gateway",
+			"value": "",
+			"type": "default",
+			"enabled": false
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-04-22T13:42:06.721Z",
+	"_postman_exported_using": "Postman/10.13.4"
+}
