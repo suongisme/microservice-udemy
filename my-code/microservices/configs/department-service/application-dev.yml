@@ -12,6 +12,11 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: update
+  rabbitmq:
+    host: '{cipher}d3a3d2d88d0ae6c8a99ffaa4ed191f37815ca68847872e90c787284e8c8a0c90'
+    port: '{cipher}25b96e037c62c0cdd24f54d63c66ee82e7eeccbe51590a471ca3861ce2029512'
+    username: '{cipher}2177b3d6f9e2a8645ab41243257c7bff8eaac409b954293ef68b01d8c31a7824'
+    password: '{cipher}a753f315ccec6e9e02665e8ac0041b804c43ef71df2426cf8694a7258a0e858d14c28df29f92df4f66488ebb86d3cfa4'
 
 eureka:
   instance:
