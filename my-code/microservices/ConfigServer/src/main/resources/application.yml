@@ -1,8 +1,12 @@
 server:
-  port: 8888
+  port: 9801
 
 encrypt:
-  key: APODNU3093r2rbjzxcn09u213asdhy08WRFH
+  key-store:
+    location: classpath:key.jks
+    password: ${KEY_PASS}
+    alias: key
+    type: jks
 
 spring:
   application:

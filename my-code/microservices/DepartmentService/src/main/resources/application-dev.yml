@@ -1,0 +1,47 @@
+server:
+  port: 9803
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ms_department?createDatabaseIfNotExist=true
+    type: com.zaxxer.hikari.HikariDataSource
+    generate-unique-name: true
+    hikari:
+      username: root
+      password: NguyenVanSuong@2001
+      connection-timeout: 30000
+      max-lifetime: 1800000
+      idle-timeout: 600000
+    
+  jpa:
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9802/eureka/
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9805/api/v2/spans
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+logging:
+  pattern:
+    level: '%5p [${spring.application.name},%X{traceId:-},%X{spanId:-}]'

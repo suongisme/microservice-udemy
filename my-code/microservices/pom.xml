@@ -27,7 +27,6 @@
     <modules>
         <module>ServiceRegistry</module>
         <module>ApiGateway</module>
-        <module>ConfigServer</module>
 
         <module>Dependencies</module>
         <module>CommonModel</module>

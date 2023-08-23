@@ -1,9 +1,10 @@
 package me.suongnguyen.departmentservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import me.suongnguyen.commonmodel.model.ResponseData;
-import me.suongnguyen.departmentservice.dto.DepartmentDto;
+import me.suongnguyen.commonmodel.model.common.ResponseData;
+import me.suongnguyen.commonmodel.model.department.DepartmentDto;
 import me.suongnguyen.departmentservice.service.IDepartmentService;
+import org.apache.logging.log4j.ThreadContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

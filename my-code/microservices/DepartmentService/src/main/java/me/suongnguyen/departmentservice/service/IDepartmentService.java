@@ -1,6 +1,6 @@
 package me.suongnguyen.departmentservice.service;
 
-import me.suongnguyen.departmentservice.dto.DepartmentDto;
+import me.suongnguyen.commonmodel.model.department.DepartmentDto;
 
 public interface IDepartmentService {
 

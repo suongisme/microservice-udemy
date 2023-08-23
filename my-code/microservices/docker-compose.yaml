@@ -1,0 +1,68 @@
+version: "3.8"
+services:
+  service-registry:
+    container_name: service-registry
+    image: microservice-udemy/service-registry
+    build: ./ServiceRegistry/.
+    ports:
+      - "${PORT_SERVICE_REGISTRY}:9802"
+  api-gateway:
+    container_name: api-gateway
+    image: microservice-udemy/api-gateway
+    build: ./ApiGateway/.
+    depends_on:
+      service-registry:
+        condition: service_started
+    ports:
+      - "${PORT_API_GATEWAY}:9800"
+    environment:
+      eureka.client.serviceUrl.defaultZone: http://service-registry:${PORT_SERVICE_REGISTRY}/eureka/
+      management.zipkin.tracing.endpoint: http://zipkin:9411/api/v2/spans
+#  config-server:
+#    container_name: config-server
+#    image: microservice-udemy/config-server
+#    build: ./ConfigServer/.
+#    depends_on:
+#      service-registry:
+#        condition: service_started
+#    ports:
+#      - "8888:8888"
+#    environment:
+#      KEY_PASS
+#      eureka.client.serviceUrl.defaultZone: http://service-registry:${PORT_SERVICE_REGISTRY}/eureka/
+  ms-database:
+    image: mysql:8.0.34
+    container_name: db
+    restart: always
+    volumes:
+      - D:\edu\udemy\microservice\database\mysql:/var/lib/mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: false
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_USER: $MYSQL_USER
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
+    ports:
+      - "${PORT_MYSQL}:3306"
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    environment:
+      STORAGE_TYPE: mysql
+      MYSQL_HOST: zipkin-mysql
+      MYSQL_USER: $ZIPKIN_MYSQL_USERNAME
+      MYSQL_PASS: $ZIPKIN_MYSQL_PASSWORD
+    depends_on:
+      - zipkin-mysql
+    ports:
+      - "${PORT_ZIPKIN}:9411"
+
+  zipkin-mysql:
+    image: openzipkin/zipkin-mysql
+    container_name: zipkin-mysql
+    environment:
+      MYSQL_DB: zipkin
+      MYSQL_USER: $ZIPKIN_MYSQL_USERNAME
+      MYSQL_PASS: $ZIPKIN_MYSQL_PASSWORD
+    ports:
+      - "${PORT_ZIPKIN_MYSQL}:3306"

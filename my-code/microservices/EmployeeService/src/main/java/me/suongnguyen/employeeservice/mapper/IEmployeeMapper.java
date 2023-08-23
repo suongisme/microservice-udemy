@@ -1,7 +1,6 @@
 package me.suongnguyen.employeeservice.mapper;
 
-import me.suongnguyen.commonmodel.mapper.IMapper;
-import me.suongnguyen.employeeservice.dto.EmployeeDto;
+import me.suongnguyen.commonmodel.model.employee.EmployeeDto;
 import me.suongnguyen.employeeservice.entity.Employee;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

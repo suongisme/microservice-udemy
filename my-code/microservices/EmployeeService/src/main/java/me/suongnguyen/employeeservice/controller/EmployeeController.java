@@ -1,10 +1,12 @@
 package me.suongnguyen.employeeservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import me.suongnguyen.commonmodel.model.ResponseData;
-import me.suongnguyen.employeeservice.dto.EmployeeDto;
+import me.suongnguyen.commonmodel.model.common.ResponseData;
+import me.suongnguyen.commonmodel.model.employee.EmployeeDto;
+import me.suongnguyen.commonmodel.model.employee.request.CreateEmployeeReq;
 import me.suongnguyen.employeeservice.service.IEmployeeService;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -21,7 +23,7 @@ public class EmployeeController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseData<EmployeeDto> createEmployee(@RequestBody EmployeeDto employeeDto) {
+    public ResponseData<EmployeeDto> createEmployee(@RequestBody @Validated CreateEmployeeReq employeeDto) {
         return ResponseData.success(this.employeeService.createEmployee(employeeDto));
     }
 }

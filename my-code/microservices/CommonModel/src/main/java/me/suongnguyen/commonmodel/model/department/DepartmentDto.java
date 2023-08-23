@@ -1,4 +1,4 @@
-package me.suongnguyen.employeeservice.dto;
+package me.suongnguyen.commonmodel.model.department;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

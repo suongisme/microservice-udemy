@@ -2,19 +2,16 @@ package me.suongnguyen.commonmodel.exception;
 
 import lombok.Getter;
 import me.suongnguyen.commonmodel.constant.BaseError;
-import me.suongnguyen.commonmodel.model.ResponseData;
 
 @Getter
 public class BusinessException extends RuntimeException {
 
-    private ResponseData<?> responseData;
+    private final BaseError baseError;
+    private final Object[] args;
 
-    public BusinessException(String message) {
-        super(message);
-    }
-
-    public BusinessException(ResponseData<?> responseData) {
-        super(responseData.getMessage());
-        this.responseData = responseData;
+    public BusinessException(BaseError baseError, Object...param) {
+        super(baseError.getMessage());
+        this.baseError = baseError;
+        this.args = param;
     }
 }

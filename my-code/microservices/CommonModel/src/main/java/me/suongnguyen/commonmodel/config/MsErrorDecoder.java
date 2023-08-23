@@ -4,8 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.Response;
 import feign.codec.ErrorDecoder;
 import me.suongnguyen.commonmodel.constant.ResponseStatus;
-import me.suongnguyen.commonmodel.exception.BusinessException;
-import me.suongnguyen.commonmodel.model.ResponseData;
+import me.suongnguyen.commonmodel.exception.MsException;
+import me.suongnguyen.commonmodel.model.common.ResponseData;
 
 import java.io.InputStream;
 
@@ -21,7 +21,7 @@ public class MsErrorDecoder implements ErrorDecoder {
             if (ResponseStatus.SUCCESS.equals(responseData.getStatus())) {
                 return this.errorDecoder.decode(s, response);
             }
-            return new BusinessException(responseData);
+            return new MsException(responseData);
         } catch (Exception ex) {
             return new Exception(ex.getMessage());
         }
