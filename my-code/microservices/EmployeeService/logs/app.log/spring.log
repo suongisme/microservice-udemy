@@ -54,3 +54,88 @@
 2023-08-23T21:23:04.587+07:00  INFO [EMPLOYEE-SERVICE,,] 1572 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2023-08-23T21:23:04.605+07:00  INFO [EMPLOYEE-SERVICE,,] 1572 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/DESKTOP-4AVMP8J:EMPLOYEE-SERVICE:9804 - deregister  status: 200
 2023-08-23T21:23:04.629+07:00  INFO [EMPLOYEE-SERVICE,,] 1572 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-08-23T21:23:27.434+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] m.s.e.EmployeeServiceApplication         : Starting EmployeeServiceApplication using Java 17.0.4.1 with PID 5180 (D:\edu\udemy\microservice\my-code\microservices\EmployeeService\target\classes started by suong in D:\edu\udemy\microservice\my-code\microservices)
+2023-08-23T21:23:27.442+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] m.s.e.EmployeeServiceApplication         : The following 1 profile is active: "dev"
+2023-08-23T21:23:31.445+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-23T21:23:31.794+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 301 ms. Found 1 JPA repository interfaces.
+2023-08-23T21:23:32.870+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=286fa277-57c0-3e6d-ba27-8524cde19b5a
+2023-08-23T21:23:33.060+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'me.suongnguyen.employeeservice.clients.department.DepartmentFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-23T21:23:34.119+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9804 (http)
+2023-08-23T21:23:34.142+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-23T21:23:34.144+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-08-23T21:23:34.606+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-23T21:23:34.608+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6998 ms
+2023-08-23T21:23:36.398+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-23T21:23:36.523+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-08-23T21:23:37.435+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-23T21:23:38.363+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c840fe3
+2023-08-23T21:23:38.369+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-23T21:23:38.502+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-08-23T21:23:40.898+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-23T21:23:40.930+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T21:23:42.809+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'DEPARTMENT-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2023-08-23T21:23:44.682+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-08-23T21:23:44.796+07:00  WARN [EMPLOYEE-SERVICE,,] 5180 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-23T21:23:44.824+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-08-23T21:23:45.004+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-08-23T21:23:45.117+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-08-23T21:23:45.117+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T21:23:45.265+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-08-23T21:23:45.265+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-08-23T21:23:45.265+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-08-23T21:23:45.265+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-08-23T21:23:45.265+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-08-23T21:23:45.265+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-08-23T21:23:45.265+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-08-23T21:23:45.875+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-08-23T21:23:45.875+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-08-23T21:23:45.890+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-08-23T21:23:45.906+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1692800625890 with initial instances count: 1
+2023-08-23T21:23:45.906+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2023-08-23T21:23:45.906+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1692800625906, current=UP, previous=STARTING]
+2023-08-23T21:23:45.906+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/DESKTOP-4AVMP8J:EMPLOYEE-SERVICE:9804: registering service...
+2023-08-23T21:23:46.015+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9804 (http) with context path ''
+2023-08-23T21:23:46.015+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9804
+2023-08-23T21:23:46.091+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/DESKTOP-4AVMP8J:EMPLOYEE-SERVICE:9804 - registration status: 204
+2023-08-23T21:23:46.465+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [main] m.s.e.EmployeeServiceApplication         : Started EmployeeServiceApplication in 21.599 seconds (process running for 27.496)
+2023-08-23T21:24:30.007+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [http-nio-9804-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-23T21:24:30.008+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [http-nio-9804-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-23T21:24:30.012+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [http-nio-9804-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-08-23T21:24:30.164+07:00  INFO [EMPLOYEE-SERVICE,64e6169d1fade14d02e3b426f73b0eb2,8c46d690b98e1dbb] 5180 --- [http-nio-9804-exec-1] m.s.e.service.impl.EmployeeServiceImpl   : get employee by id: 2
+2023-08-23T21:24:30.727+07:00  INFO [EMPLOYEE-SERVICE,64e6169d1fade14d02e3b426f73b0eb2,8c46d690b98e1dbb] 5180 --- [http-nio-9804-exec-1] m.s.e.service.impl.EmployeeServiceImpl   : found employee by id: me.suongnguyen.employeeservice.entity.Employee@21
+2023-08-23T21:25:31.898+07:00  INFO [EMPLOYEE-SERVICE,64e616dbfdfd828b8a0a97f028d452fc,7818d62cc70d4f65] 5180 --- [http-nio-9804-exec-2] m.s.e.service.impl.EmployeeServiceImpl   : get employee by id: 2
+2023-08-23T21:25:31.937+07:00  INFO [EMPLOYEE-SERVICE,64e616dbfdfd828b8a0a97f028d452fc,7818d62cc70d4f65] 5180 --- [http-nio-9804-exec-2] m.s.e.service.impl.EmployeeServiceImpl   : found employee by id: me.suongnguyen.employeeservice.entity.Employee@21
+2023-08-23T21:28:45.289+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T21:33:45.302+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T21:38:45.313+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T21:39:09.239+07:00  INFO [EMPLOYEE-SERVICE,64e61a0c0a9964f4b473051a70dd9b45,467f4f532c969dc6] 5180 --- [http-nio-9804-exec-9] m.s.e.service.impl.EmployeeServiceImpl   : get employee by id: 2
+2023-08-23T21:39:09.265+07:00  INFO [EMPLOYEE-SERVICE,64e61a0c0a9964f4b473051a70dd9b45,467f4f532c969dc6] 5180 --- [http-nio-9804-exec-9] m.s.e.service.impl.EmployeeServiceImpl   : found employee by id: me.suongnguyen.employeeservice.entity.Employee@21
+2023-08-23T21:40:25.029+07:00  INFO [EMPLOYEE-SERVICE,64e61a588f356c9d99a4a6c088a36364,61c2e17dd06fc777] 5180 --- [http-nio-9804-exec-7] m.s.e.service.impl.EmployeeServiceImpl   : get employee by id: 2
+2023-08-23T21:40:25.051+07:00  INFO [EMPLOYEE-SERVICE,64e61a588f356c9d99a4a6c088a36364,61c2e17dd06fc777] 5180 --- [http-nio-9804-exec-7] m.s.e.service.impl.EmployeeServiceImpl   : found employee by id: me.suongnguyen.employeeservice.entity.Employee@21
+2023-08-23T21:43:45.319+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T21:47:17.526+07:00  INFO [EMPLOYEE-SERVICE,64e61bf42d23d5f03a104bb4e8aa0278,34bcea319c6c361d] 5180 --- [http-nio-9804-exec-5] m.s.e.service.impl.EmployeeServiceImpl   : get employee by id: 2
+2023-08-23T21:47:17.551+07:00  INFO [EMPLOYEE-SERVICE,64e61bf42d23d5f03a104bb4e8aa0278,34bcea319c6c361d] 5180 --- [http-nio-9804-exec-5] m.s.e.service.impl.EmployeeServiceImpl   : found employee by id: me.suongnguyen.employeeservice.entity.Employee@21
+2023-08-23T21:48:45.323+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T21:48:46.511+07:00  INFO [EMPLOYEE-SERVICE,64e61c4ee919e4bca54cec75a78f80e7,f61af07827d1d2b1] 5180 --- [http-nio-9804-exec-4] m.s.e.service.impl.EmployeeServiceImpl   : get employee by id: 2
+2023-08-23T21:48:46.539+07:00  INFO [EMPLOYEE-SERVICE,64e61c4ee919e4bca54cec75a78f80e7,f61af07827d1d2b1] 5180 --- [http-nio-9804-exec-4] m.s.e.service.impl.EmployeeServiceImpl   : found employee by id: me.suongnguyen.employeeservice.entity.Employee@21
+2023-08-23T21:53:45.340+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T21:58:14.904+07:00  INFO [EMPLOYEE-SERVICE,64e61e8608eae05cd4445270d17d25ec,adb4d6f5d8c98dc6] 5180 --- [http-nio-9804-exec-2] m.s.e.service.impl.EmployeeServiceImpl   : get employee by id: 2
+2023-08-23T21:58:14.979+07:00  INFO [EMPLOYEE-SERVICE,64e61e8608eae05cd4445270d17d25ec,adb4d6f5d8c98dc6] 5180 --- [http-nio-9804-exec-2] m.s.e.service.impl.EmployeeServiceImpl   : found employee by id: me.suongnguyen.employeeservice.entity.Employee@21
+2023-08-23T21:58:45.346+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T22:03:45.359+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T22:08:45.373+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T22:13:45.386+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T22:18:45.393+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T22:23:45.403+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T22:28:45.413+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-08-23T22:28:48.595+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2023-08-23T22:28:48.595+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1692804528595, current=DOWN, previous=UP]
+2023-08-23T22:28:48.595+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/DESKTOP-4AVMP8J:EMPLOYEE-SERVICE:9804: registering service...
+2023-08-23T22:28:48.747+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/DESKTOP-4AVMP8J:EMPLOYEE-SERVICE:9804 - registration status: 204
+2023-08-23T22:28:49.639+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-23T22:28:49.740+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-23T22:28:50.267+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-23T22:28:50.358+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-08-23T22:28:53.381+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-08-23T22:28:53.427+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/DESKTOP-4AVMP8J:EMPLOYEE-SERVICE:9804 - deregister  status: 200
+2023-08-23T22:28:53.443+07:00  INFO [EMPLOYEE-SERVICE,,] 5180 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
